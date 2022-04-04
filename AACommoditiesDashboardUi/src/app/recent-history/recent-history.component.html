@@ -1,0 +1,40 @@
+<h3>Recent History</h3>
+<p>Showing history of key actions for the last 5 days</p>
+<table id="tableHistory" mdbTable class="recent-history">
+  <thead>
+    <tr>
+      <th [mdbTableSort]="elements" sortBy="model">
+        Model <mdb-icon fas icon="sort"></mdb-icon>
+      </th>
+      <th [mdbTableSort]="elements" sortBy="commodity">
+        Commodity <mdb-icon fas icon="sort"></mdb-icon>
+      </th>
+      <th [mdbTableSort]="elements" sortBy="date">
+        Date <mdb-icon fas icon="sort"></mdb-icon>
+      </th>
+      <th [mdbTableSort]="elements" sortBy="newTradeAction">
+        New Trade Action <mdb-icon fas icon="sort"></mdb-icon>
+      </th>
+      <th [mdbTableSort]="elements" sortBy="price">
+        Price <mdb-icon fas icon="sort"></mdb-icon>
+      </th>
+      <th [mdbTableSort]="elements" sortBy="position">
+        Position <mdb-icon fas icon="sort"></mdb-icon>
+      </th>
+      <th [mdbTableSort]="elements" sortBy="pnlDaily">
+        PnL Daily <mdb-icon fas icon="sort"></mdb-icon>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let x of elements; let i = index">
+      <th scope="row">{{ x.model }}</th>
+      <td>{{ x.commodity }}</td>
+      <td>{{ x.date?.toLocaleDateString() }}</td>
+      <td>{{ x.newTradeAction }}</td>
+      <td>{{ x.price }}</td>
+      <td>{{ x.position }}</td>
+      <td>{{ x.pnlDaily }}</td>
+    </tr>
+  </tbody>
+</table>
