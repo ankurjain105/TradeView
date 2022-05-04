@@ -1,0 +1,21 @@
+<div class="sideLabelInput textbox" tabindex="0">
+  <label *ngIf="label != null">{{label}}:</label>
+    <div [id]="id" class="input dropdown">
+      <div style="display:inline-flex;width:100%" class="">
+        <input name="testValue" [value]="value" type="hidden" />
+        <input [class.readonly]="readonly" readonly (focus)="gotFocus()" name="text" class="dd-text form-control" type="text" [placeholder]="placeholder" [value]="selectedItemText">
+        <div *ngIf="!readonly" (click)="gotFocus()" class="arrow-down"></div>
+      </div>
+      <div class="c2a_mode2 c2a_dark c2a_accent_default" id="cc_c2a" [hidden]="!showResults">
+        <ul class="c2a_results">
+          <li *ngFor="let item of items; index as i; first as isFirst" [class.active]="i == activeIndex" [class.cc-filter]="items.length > 1">
+            <div (click)="onItemSelected($event, item)" class="item" style="width:100%">
+              <span>{{resolve(displayProperty, item)}}</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  

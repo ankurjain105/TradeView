@@ -1,3 +1,17 @@
-<div>
-  Add content here...
-</div>
+<body>
+  <div class="wrapper">
+    <app-menu></app-menu>
+    <div class="main-panel">
+     <app-header></app-header>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="row">
+          <div class="col-12">
+            <router-outlet></router-outlet>
+          </div>
+        </div>
+      </div>
+      <app-footer></app-footer>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "df31a7f9-ef0c-4734-ad24-df5684620590": {
+      "ProjectGuid": "df31a7f9-ef0c-4734-ad24-df5684620590",
+      "DisplayName": "AA.CommoditiesDashboard.Api",
+      "ColorIndex": 0
+    },
+    "a428f6d0-34a4-412b-b8ac-06f6fabdbaa1": {
+      "ProjectGuid": "a428f6d0-34a4-412b-b8ac-06f6fabdbaa1",
+      "DisplayName": "AA.CommoditiesDashboard.Api.Models",
+      "ColorIndex": 1
+    },
+    "123e31e4-dfb5-445f-b40d-f5f4910b1b38": {
+      "ProjectGuid": "123e31e4-dfb5-445f-b40d-f5f4910b1b38",
+      "DisplayName": "AA.CommoditiesDashboard.Persistence",
+      "ColorIndex": 2
+    },
+    "c9369a21-bf5b-444b-9719-d3bcb577d993": {
+      "ProjectGuid": "c9369a21-bf5b-444b-9719-d3bcb577d993",
+      "DisplayName": "AA.CommoditiesDashboard.Persistence.UnitTests",
+      "ColorIndex": 3
+    },
+    "046203c3-8da9-4115-90be-c73fe427e584": {
+      "ProjectGuid": "046203c3-8da9-4115-90be-c73fe427e584",
+      "DisplayName": "AA.CommoditiesDashboard.Service",
+      "ColorIndex": 4
+    },
+    "4f87f6e1-f337-47fd-9deb-2e7cb12d7543": {
+      "ProjectGuid": "4f87f6e1-f337-47fd-9deb-2e7cb12d7543",
+      "DisplayName": "AA.CommoditiesDashboard.Api.Core",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}

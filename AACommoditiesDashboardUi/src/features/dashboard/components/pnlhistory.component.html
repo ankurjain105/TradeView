@@ -1,0 +1,41 @@
+<h2>PnL History</h2>
+<div class="row">
+    <div class="col-md-12" style="height: 500px;">
+        <ngx-charts-line-chart
+[scheme]="colorScheme"
+[results]="pnlHistory"
+[gradient]="false"
+[xAxis]="true"
+[yAxis]="true"
+[legend]="true"
+[showXAxisLabel]="true"
+[showYAxisLabel]="true"
+xAxisLabel="Trade Date"
+yAxisLabel="Daily Pnl"
+[autoScale]="true"
+[timeline]="true"
+[animations]="true"
+(select)="onSelect($event)">
+</ngx-charts-line-chart>
+    </div>
+</div>
+    <div class="row">
+        <div class="col-md-12" style="height: 500px;">
+            <ngx-charts-line-chart
+    [scheme]="colorScheme"
+    [results]="pnlHistoryCumulative"
+    [gradient]="false"
+    [xAxis]="true"
+    [yAxis]="true"
+    [legend]="true"
+    [showXAxisLabel]="true"
+    [showYAxisLabel]="true"
+    xAxisLabel="Trade Date"
+    yAxisLabel="Cummulative Pnl"
+    [autoScale]="true"
+    [timeline]="true"
+    [animations]="true"
+    (select)="onSelect($event)">
+    </ngx-charts-line-chart>
+        </div>
+</div>
